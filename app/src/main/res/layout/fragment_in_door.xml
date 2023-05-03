@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InDoorFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/myfont"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        android:text="@string/in_room" />
+
+    <include layout="@layout/content_main" android:id="@+id/contentMain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
