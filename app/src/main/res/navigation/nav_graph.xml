@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/HomeFragment">
+
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.kodex.camerarecyclerview.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_HomeFragment_to_FrontFragment"
+            app:destination="@id/frontFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kodex.camerarecyclerview.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/frontFragment"
+        android:name="com.kodex.camerarecyclerview.FrontFragment"
+        android:label="fragment_front"
+        tools:layout="@layout/fragment_front" />
+
+    <fragment
+        android:id="@+id/backFragment"
+        android:name="com.kodex.camerarecyclerview.BackFragment"
+        android:label="fragment_back"
+        tools:layout="@layout/fragment_back" />
+
+    <fragment
+        android:id="@+id/in_doorFragment"
+        android:name="com.kodex.camerarecyclerview.InDoorFragment"
+        android:label="fragment_in_door"
+        tools:layout="@layout/fragment_in_door" />
+
+    <fragment
+        android:id="@+id/doorFragment"
+        android:name="com.kodex.camerarecyclerview.DoorFragment"
+        android:label="fragment_door"
+        tools:layout="@layout/fragment_door" />
+</navigation>
